@@ -1,42 +1,45 @@
 @import "../../sass-function/lerp";
 
 .proprety{
-  width:lerp(375,1440,335,1240);
+  width: lerp(375, 1440, 335, 1240);
   margin: auto;
   min-height: 100vh;
 }
-.propretyInfo{
 
+.propretyInfo{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem 0;
+
   .mainPropretyInfo{
-    width: lerp(375,1440,335,830);
+    width: lerp(375, 1440, 335, 830);
     margin: 0;
   }
+
   .secondaryPropretyInfo{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width:100%;
   }
-  @media screen and (min-width: 768px) {
+
+  @media (min-width: 768px) {
     .secondaryPropretyInfo {
       width: min-content;
       flex-wrap: wrap;
       flex-direction: column-reverse;
     }
   }
-
-
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+
   .propretyDetails {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     .collapse{
       width: 47%;
     }

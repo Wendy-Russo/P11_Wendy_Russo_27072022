@@ -18,7 +18,7 @@ root.render(
         <Route path="/" element={<Home/>}/>
         <Route path="/A-Propos" element={<APropos/>}/>
         <Route path="/Proprety/:PROPRETYID" element={<Proprety/>}/>
-        <Route path="*" element={<PageError404/>}/>
+        <Route element={<PageError404/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

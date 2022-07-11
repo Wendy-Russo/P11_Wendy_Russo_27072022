@@ -9,6 +9,7 @@ import Collapse from '../../components/Collapse/Collapse';
 import PropretyHost from '../../components/PropretyHost/PropretyHost';
 import Footer from '../../components/Footer/Footer';
 import { useParams } from 'react-router-dom';
+import PageError404 from '../Error404/PageError404';
 import "./Proprety.scss"
 
 function Proprety() {
@@ -18,10 +19,20 @@ function Proprety() {
   */
   const {PROPRETYID} = useParams();
   const PROPRETY = logements[PROPRETYID];
+
+  if(PROPRETY === undefined){
+    return(
+      <PageError404 />
+    );
+  }
+
   return (
     <>
+
       <Header/>
+
       <main className="proprety">
+
         <Gallery pictures={PROPRETY.pictures} />
 
         <section className='propretyInfo'>
@@ -34,11 +45,13 @@ function Proprety() {
             <PropretyHost host={PROPRETY.host} />
           </div>
         </section>
-        <div className='propretyDetails'>
+
+        <section className='propretyDetails'>
             <Collapse summary="Description" details={PROPRETY.description} />
             <Collapse summary="Equipments" details={PROPRETY.equipments} />
-        </div>
+        </section>
       </main>
+
       <Footer/>
     </>
   );
