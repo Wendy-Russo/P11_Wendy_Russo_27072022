@@ -1,0 +1,27 @@
+@import "../../sass-function/lerp";
+@import "../PropretyRating/PropretyRating.scss";
+
+.propretyHost{
+
+    @include ratingWidth;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: lerp(375,1440,32,64);
+    gap: 1rem;
+
+    .name{
+        color:#FF6060;
+        font-size: lerp(375,1440,12,18);
+        text-align: end;
+        height: 100%;
+        font-weight: 500;
+    }
+    .hostPhoto{
+        height: 100%;
+        width: lerp(375,1440,32,64);
+        border-radius: 100%;
+
+    }
+
+}

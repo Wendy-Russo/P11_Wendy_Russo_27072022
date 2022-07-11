@@ -1,0 +1,7 @@
+@import "../../sass-function/lerp";
+
+.Home{
+    width:lerp(375,1440,335,1240);
+    margin: 0 auto;
+    min-height: 100vh;
+}

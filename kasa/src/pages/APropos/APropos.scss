@@ -1,0 +1,11 @@
+@import "../../sass-function/lerp";
+
+.aPropos{
+    width:lerp(375,1440,335,1240);
+    margin: auto;
+    min-height: 100vh;
+    .collapse{
+        width: lerp(375,1440,335,1023);
+        margin: 1.5rem auto;
+    }
+}

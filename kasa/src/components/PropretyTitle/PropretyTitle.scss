@@ -1,0 +1,18 @@
+@import "../../sass-function/lerp";
+
+.propretyTitle{
+    margin: 0 0 0 0;
+    .title,.location{
+        color:#FF6060;
+        margin: 0rem 0;
+    }
+    .title{
+        font-size: lerp(375,1440,18,36);
+        font-weight: 500;
+        margin: 0 0 0.5rem;
+    }
+    .location{
+        font-size: 18px;
+    }
+
+}

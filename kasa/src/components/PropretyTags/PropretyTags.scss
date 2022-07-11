@@ -1,0 +1,22 @@
+@import "../../sass-function/lerp";
+
+.propretyTags{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 1rem 0 0 0;
+
+    .propretyTag{
+        background-color: #FF6060;
+        font-size: lerp(375,1440,10,18);
+        color: white;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0.125rem 1.5rem;
+        font-weight: 500;
+
+    }
+
+}

@@ -1,0 +1,26 @@
+@import "../../sass-function/lerp";
+
+.footer{
+
+
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    img{
+        filter: brightness(100);
+        width: 122px;
+    }
+    p{
+        margin: 1rem 0 0;
+        font-size: lerp(375,1440,12,24);
+        z-index: 1;
+
+    }
+}
