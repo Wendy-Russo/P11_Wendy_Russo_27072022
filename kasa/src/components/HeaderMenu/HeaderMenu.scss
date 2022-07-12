@@ -1,25 +1,25 @@
 @import "../../sass-function/lerp";
 
 .headerMenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:lerp(375,1440,335,1240);
+  margin: lerp(375,1440,20,40) auto 0 ;
+  img{
+    height: lerp(375,1440,47,68);
+    width: auto;
+  }
+  nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width:lerp(375,1440,335,1240);
-    margin: lerp(375,1440,20,40) auto 0 ;
-    img{
-        height: lerp(375,1440,47,68);
-        width: auto;
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
-        gap : lerp(375,1440,15,57);
-    }
-    a{
+    gap : lerp(375,1440,15,57);
+  }
+  a{
 
-        color: #FF6060;
-        font-size: lerp(375,1440,12,24);
-        text-decoration: none;
-        font-weight: 500;
-    }
+    color: #FF6060;
+    font-size: lerp(375,1440,12,24);
+    text-decoration: none;
+    font-weight: 500;
+  }
 }

@@ -4,30 +4,30 @@
 $star_size : lerp(375,1440,15,30);
 @mixin ratingWidth {
 
-    width: calc($star_size * 6);
+  width: calc($star_size * 6);
 }
 
 .propretyRating{
 
-    @include ratingWidth;
-    display: flex;
-    flex-wrap: nowrap;
-    gap:calc($star_size / 5);
+  @include ratingWidth;
+  display: flex;
+  flex-wrap: nowrap;
+  gap:calc($star_size / 5);
 
-    .full,.empty{
+  .full,.empty{
 
-        font-size: $star_size;
+    font-size: $star_size;
 
-        font-variation-settings:
-        'FILL' 1,
-        'wght' 700,
-        'GRAD' 10,
-        'opsz' 48,
-    }
-    .full{
-        color: #FF6060;
-    }
-    .empty{
-        color: #E3E3E3;
-    }
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 10,
+    'opsz' 48,
+  }
+  .full{
+    color: #FF6060;
+  }
+  .empty{
+    color: #E3E3E3;
+  }
 }

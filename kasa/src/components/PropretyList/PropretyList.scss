@@ -1,23 +1,23 @@
 @import "../../sass-function/lerp";
 
 .PropretyList{
-    $paddingX : 50px;
-    $gap : 60px;
+  $paddingX : 50px;
+  $gap : 60px;
 
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap:lerp(375,1440,20,50) lerp(375,1440,00,60);
-    margin: 0;
-    border-radius: lerp(375,1440,10,25) ;
-    background-color: #F6F6F6;
-    padding: lerp(375,1440,0,56) lerp(375,1440,0,50);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:lerp(375,1440,20,50) lerp(375,1440,00,60);
+  margin: 0;
+  border-radius: lerp(375,1440,10,25) ;
+  background-color: #F6F6F6;
+  padding: lerp(375,1440,0,56) lerp(375,1440,0,50);
 
-    a{
+  a{
 
-        width: lerp(375,1440,335,340);
-        height: lerp(375,1440,255,340);
-    }
+    width: lerp(375,1440,335,340);
+    height: lerp(375,1440,255,340);
+  }
 
 }

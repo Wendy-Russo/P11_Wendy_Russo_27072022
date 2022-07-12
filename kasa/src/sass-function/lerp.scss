@@ -1,10 +1,13 @@
 @function lerp($WINDOW-MIN, $WINDOW-MAX, $SIZE-MIN, $SIZE-MAX ){
-    $LERP : calc(   min(max((100vw - ($WINDOW-MIN * 1px )) / ($WINDOW-MAX - $WINDOW-MIN) , 0px ) , 1px )) ;
-    $VALUE :  calc( (( 1px - $LERP) * $SIZE-MIN ) + ($LERP * $SIZE-MAX) ) ;
-    @return $VALUE;
+
+
+  $UNCAPPED_FAC : calc((100vw - ($WINDOW-MIN * 1px )) / ($WINDOW-MAX - $WINDOW-MIN));
+  $LERP : calc(   min(max($UNCAPPED_FAC , 0px ) , 1px )) ;
+  $VALUE :  calc( (( 1px - $LERP) * $SIZE-MIN ) + ($LERP * $SIZE-MAX) ) ;
+  @return $VALUE;
 }
 
 @function mult($BEFORE ){
-    $VALUE :  calc($BEFORE * 2 ) ;
-    @return $VALUE;
+  $VALUE :  calc($BEFORE * 2 ) ;
+  @return $VALUE;
 }

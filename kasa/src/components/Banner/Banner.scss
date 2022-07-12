@@ -1,29 +1,29 @@
 @import "../../sass-function/lerp";
 
 .banner{
-    height: lerp(375,1440,111,223)  ;
+  height: lerp(375,1440,111,223)  ;
+  width: 100%;
+  //max-height: 223px;
+  margin:lerp(375,1440,16,63) 0 lerp(375,1440,22,43);
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  @debug 'ddd ';
+
+  p{
+    position: absolute;
+    font-size: lerp(375,1440,24,48) ;
+    color : white;
+    z-index: 1;
+    text-align: center;
+  }
+  img{
     width: 100%;
-    //max-height: 223px;
-    margin:lerp(375,1440,16,63) 0 lerp(375,1440,22,43);
-    position: relative;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-
-    @debug 'ddd ';
-
-    p{
-        position: absolute;
-        font-size: lerp(375,1440,24,48) ;
-        color : white;
-        z-index: 1;
-        text-align: center;
-    }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: lerp(375,1440,10,25) ;
-        filter : brightness(0.8);
-    }
+    height: 100%;
+    object-fit: cover;
+    border-radius: lerp(375,1440,10,25) ;
+    filter : brightness(0.8);
+  }
 }
