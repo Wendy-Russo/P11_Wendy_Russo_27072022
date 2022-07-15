@@ -16,7 +16,9 @@ function HeaderMenu(props) {
   return(
     <header className='headerMenu'>
 
-      <img alt="logo" src={logo} />
+      <Link to="/">
+        <img alt="logo" src={logo} />
+      </Link>
       <nav>
         <Link to="/">
           Accueil

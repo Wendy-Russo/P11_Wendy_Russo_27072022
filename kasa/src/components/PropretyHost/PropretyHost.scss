@@ -2,7 +2,6 @@
 @import "../PropretyRating/PropretyRating.scss";
 
 .propretyHost{
-
   @include ratingWidth;
   display: flex;
   align-items: center;
@@ -17,11 +16,10 @@
     height: 100%;
     font-weight: 500;
   }
+
   .hostPhoto{
     height: 100%;
     width: lerp(375,1440,32,64);
     border-radius: 100%;
-
   }
-
 }

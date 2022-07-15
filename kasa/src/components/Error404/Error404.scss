@@ -15,16 +15,18 @@
     font-size: lerp(375,1440,96,288);
     margin: 0rem 0;
   }
+
   .errorDetails{
     font-size: lerp(375,1440,18,36);
     margin: 0rem 0 5rem;
   }
+
   .a{
     font-size: 18px;
     color: #FF6060;
     text-decoration: none;
-
   }
+
   a:visited {
     color: #FF6060;
     text-decoration: none;

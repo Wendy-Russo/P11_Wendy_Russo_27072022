@@ -1,14 +1,15 @@
 import React from 'react';
 import './Collapse.scss';
 
-
-
 function Collapse (props) {
+
   const SUMMARY = props.summary;
   const DETAILS = props.details;
 
   if(Array.isArray(DETAILS)){
+
     return(
+
       <details className='collapse'>
         <summary >
           {SUMMARY}
@@ -25,7 +26,9 @@ function Collapse (props) {
       </details>
     )
   }
+
   return(
+
     <details className='collapse'>
       <summary >
         {SUMMARY}
@@ -41,7 +44,6 @@ function Collapse (props) {
       </p>
     </details>
   )
-
 }
 
 export default Collapse

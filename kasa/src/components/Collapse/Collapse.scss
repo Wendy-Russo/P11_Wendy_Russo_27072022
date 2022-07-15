@@ -10,12 +10,10 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-
     font-size: lerp(375,1440,13,18);
     font-weight: 500;
     padding: 0.25rem 1rem;
     border-radius: lerp(375,1440,5,10);
-
     background-color: #FF6060 ;
     color: white;
 
@@ -36,12 +34,11 @@
   p,
   ul{
     color: #FF6060;
-
     margin: 0;
     padding: 2rem 1rem;
     font-size: lerp(375,1440,12,18);
-
   }
+
   ul{
     list-style: none;
   }
@@ -49,12 +46,15 @@
 
 .collapse[open]{
   background-color: #F6F6F6 ;
+
   .arrow-down,.arrow-up{
     font-size: lerp(375,1440,25,42);
   }
+
   .arrow-down{
     display: none;
-}
+  }
+
   .arrow-up{
     display: block;
   }

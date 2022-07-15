@@ -1,8 +1,6 @@
 @import "../../sass-function/lerp";
 
 .footer{
-
-
   background-color: #000000;
   color: white;
   display: flex;
@@ -17,10 +15,10 @@
     filter: brightness(100);
     width: 122px;
   }
+
   p{
     margin: 1rem 0 0;
     font-size: lerp(375,1440,12,24);
     z-index: 1;
-
   }
 }

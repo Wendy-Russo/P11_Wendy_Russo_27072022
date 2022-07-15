@@ -18,7 +18,6 @@ const URLID = URL[URL.length-1];
 let propretyRoute = <Route path="/Proprety/:PROPRETYID" element={<Proprety/>}/>
 
 if(logements[URLID] === undefined){
-
   propretyRoute = <Route path="/Proprety/:PROPRETYID" element={<PageError404/>}/>
 }
 
@@ -34,7 +33,3 @@ root.render(
     </Router>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

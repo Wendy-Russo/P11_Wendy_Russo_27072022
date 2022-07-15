@@ -1,7 +1,6 @@
 @import "../../sass-function/lerp";
 
 .gallery{
-
   height: lerp(375,1440,255,415);
   width: lerp(375,1440,335,1240);
   position: relative;
@@ -34,6 +33,7 @@
     width: 100%;
     object-fit: cover;
   }
+
   .gallery-img::before{
     width: 100%;
     height: 100%;
@@ -58,9 +58,11 @@
     z-index: 2;
     cursor: pointer;
   }
+
   .left{
     left : 0;
   }
+
   .right{
     right : 0;
   }

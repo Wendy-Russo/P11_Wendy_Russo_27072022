@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 //import { createPath } from 'react-router-dom';
 import './Gallery.scss';
 //import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import './Gallery.scss';
 function Gallery(props) {
 
   const pictures = props.pictures;
-  let currentImage = 0;
+  const [currentImage , setCurrentImage] = useState(0);
   const style = {
     transform : `translateX(-${currentImage}00%)`
   };
@@ -15,7 +15,7 @@ function Gallery(props) {
   const MOVE_TO_NEXT = () => {
     const IMAGES = document.getElementsByClassName("gallery-img");
 
-    currentImage = (currentImage + 1) % IMAGES.length;
+    setCurrentImage((currentImage + 1) % IMAGES.length);
 
     for (let index = 0; index < IMAGES.length; index++) {
       IMAGES[index].style.transform = `translateX(-${currentImage}00%)`;
@@ -26,7 +26,7 @@ function Gallery(props) {
   const MOVE_TO_PREV = () => {
     const IMAGES = document.getElementsByClassName("gallery-img");
 
-    currentImage = (currentImage + (IMAGES.length-1)) % IMAGES.length;
+    setCurrentImage((currentImage + (IMAGES.length-1)) % IMAGES.length);
 
     for (let index = 0; index < IMAGES.length; index++) {
       IMAGES[index].style.transform = `translateX(-${currentImage}00%)`;
@@ -54,8 +54,5 @@ function Gallery(props) {
     </div>
   )
 }
-
-
-
 
 export default Gallery
