@@ -6,8 +6,7 @@ import './Home.scss'
 import Banner from '../../components/Banner/Banner';
 
 function Home() {
-  /*<Header/>*/
-  console.log("home.jsx");
+
   return (
     <>
       <HeaderMenu/>

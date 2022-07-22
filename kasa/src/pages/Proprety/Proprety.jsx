@@ -17,15 +17,10 @@ function Proprety() {
   const PROPRETY = logements[PROPRETYID];
 
   return (
-
     <>
-
       <Header/>
-
       <main className="proprety">
-
         <Gallery pictures={PROPRETY.pictures} />
-
         <section className='propretyInfo'>
           <div className='mainPropretyInfo'>
             <PropretyTitle title={PROPRETY.title} location={PROPRETY.location} />
@@ -36,12 +31,10 @@ function Proprety() {
             <PropretyHost host={PROPRETY.host} />
           </div>
         </section>
-
         <section className='propretyDetails'>
             <Collapse summary="Description" details={PROPRETY.description} />
             <Collapse summary="Equipments" details={PROPRETY.equipments} />
         </section>
-
       </main>
       <Footer/>
     </>

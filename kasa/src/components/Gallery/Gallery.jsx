@@ -6,7 +6,7 @@ import './Gallery.scss';
 
 function Gallery(props) {
 
-  const pictures = props.pictures;
+  const PICTURES = props.pictures;
   const [currentImage , setCurrentImage] = useState(0);
   const style = {
     transform : `translateX(-${currentImage}00%)`
@@ -34,6 +34,22 @@ function Gallery(props) {
 
   };
 
+  if(PICTURES.length === 1){
+    return(
+
+      <div className='gallery'>
+
+        <div className='overlay'>
+
+        </div>
+        <div className='images'>
+          {PICTURES.map((image,id) => (<img key={id} alt="gallery"  className="gallery-img" style={style} src={image} />))}
+        </div>
+
+      </div>
+    )
+  }
+
   return(
 
     <div className='gallery'>
@@ -48,7 +64,7 @@ function Gallery(props) {
 
       </div>
       <div className='images'>
-        {pictures.map((image,id) => (<img key={id} alt="gallery"  className="gallery-img" style={style} src={image} />))}
+        {PICTURES.map((image,id) => (<img key={id} alt="gallery"  className="gallery-img" style={style} src={image} />))}
       </div>
 
     </div>
